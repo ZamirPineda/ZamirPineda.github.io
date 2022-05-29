@@ -11,19 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize-dist.css">
     <link rel="stylesheet" href="css/style-dist.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-
     <!-- Open Header -->
-    <header class="header-home">
+    <header id="header" class="header-home">
         <!-- Open Menu -->
         <nav class="main-menu">
-            <a class="logotipo" href="http://"><img src="images/menu.png" alt="Zamir Pineda"></a>
+            <a class="logotipo" href="http://"><img src="" alt="Zamir Pineda"></a>
             <!-- Menu Desktop -->
             <ul class="menu-link-desktop">
                 <li>
-                    <a class="links-menu" href="http://">Inicio</a>
+                    <a class="links-menu" href="#header">Inicio</a>
                 </li>
                 <li>
                     <a class="links-menu" href="http://">Proyectos en JavaScript</a>
@@ -54,10 +54,10 @@
                 <h1 class="title-hero"><span class="first-title">Zamir Alejandro Pineda Gallego</span>Desarrollador</h1>
                 <h3 class="description-hero">-¿Quién soy? Hola, soy Zamir, tengo 21 años, estoy comenzando mi vida laboral, me apasiona todo el tema de programación y espero poder ser desarrollador, un paso a la vez.
 -Mi lema es: Si puedo hacerlo una vez, lo haré mil veces y mejor en cada una de ellas.</h3>
-                <a class="btns btn-hero" href="#footer" target="_blank">Contáctame</a>
+                <a class="btns btn-hero" href="#footer">Contáctame</a>
             </hgroup>
             <figure>
-                <img class="image-hero img-responsive" src="images/Foto Zamir.jpeg" alt="Contacto">
+                <img class="image-hero img-responsive" src="images/Foto mia.jpeg" alt="Contacto">
             </figure>
         </div>
     </section>
@@ -129,29 +129,26 @@
 
         <!-- Open Contacto -->
         <section class="section-page section-contact">
-            <h2 class="title-section">Cotizar</h2>
-            <form id="formulario-contacto" action="" class="form-landing-page" method="post">
-                <ul id="errors"></ul>
-                <div class="input-field">
-                    <input class="input-form" type="text" name="name_contact" required placeholder="Nombre y apellido">
+            <h2 class="title-section">Información de contacto</h2>
+
+            <section class="section-page section-services">
+                <div class="container">
+                    <article class="box-services">
+                        <a class="box-image-services" href="https://www.linkedin.com/in/zamir-alejandro-pineda-gallego-06038021a" target="_blank"><img class="img-responsive" src="images/linkedin.png" alt="Linkedin"></a>
+                        <h3 class="title-services">Mi Linkedin</h3>
+                    </article>
+                    <article class="box-services">
+                        <a class="box-image-services" href="https://github.com/ZamirPineda" target="_blank"><img class="img-responsive" src="images/github.png" alt="Github"></a>
+                        <h3 class="title-services">Mi Github</h3>
+                    </article>
+                    <article class="box-services">
+                        <a class="box-image-services" href="mailto:zamirpg@hotmail.com" target="_blank"><img class="img-responsive" src="images/outlook.png" alt="Outlook"></a>
+                        <h3 class="title-services">Correo</h3>
+                    </article>
                 </div>
-                <div class="input-field">
-                    <input class="input-form" type="email" name="email_contact" required placeholder="Ingresa tu email">
-                </div>
-                <div class="input-field">
-                    <input class="input-form" type="number" name="phone_contact" required placeholder="Ingresa tu teléfono">
-                </div>
-                <div class="input-field">
-                    <select id="topic_contact" class="select-form" required>
-                        <option value="html5">HTML5</option>
-                        <option value="css3">CSS3</option>
-                        <option value="javascript">Javascript</option>
-                        <option value="github">Git/Github</option>
-                  </select>
-                </div>
-                <div class="input-field">
-                    <textarea class="textarea-form" name="commit_contact" cols="30" rows="10" placeholder="Déjanos tus comentarios..." minlength="10" maxlength="200"></textarea>
-                </div>
+            </section>
+            
+
                 <button class="btns btn-enviar" type="submit" value="submit" name="btn_enviar">Enviar y cotizar</button>
             </form>
         </section>
@@ -161,8 +158,8 @@
     <footer id="footer" class="footer">
         <h6 class="copy">Diseñado y Desarrollado por <a href="https://www.linkedin.com/in/zamir-alejandro-pineda-gallego-06038021a" target="_blank">Zamir Pineda - Desarrolador</a>
     </footer>
-    <!-- End Footer -->
-    <script src="js/index.js"></script>
+    <!-- End Footer --> 
+    <script src="js/style.js"></script>
 
 </body>
 
